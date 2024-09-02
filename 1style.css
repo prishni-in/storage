@@ -1,0 +1,73 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+.pdfviewer {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.pdfjs-toolbar {
+	display: flex;
+	flex: 0 0 auto;
+	padding: 1em;
+	height: max-content;
+}
+
+.maindoc{
+	flex: 1;
+}
+
+.pdfviewer-container {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	overflow: hidden;
+	flex: 1;
+}
+
+.thumbnails {
+	width: 150px !important;
+	border: 1px solid #aaa;
+	border-right: 3px solid #999;
+	background: #ccc;
+}
+
+.thumbnails .pdfpage.selected {
+	border: 2px solid #777;
+	border-radius: 2px;
+}
+
+.hide {
+	display: none;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+.numbering {
+	width: 100%;
+	text-align: center;
+	font-size: 0.75em;
+	margin-top: 0.25em;
+	color: #555;
+}
+
+.thumbnails .pdfpage {
+	margin-bottom: 2em !important;
+}
+
+.thumbnails .pdfpage.hidden {
+	opacity: 0.3;
+}
+
+.maindoc .pdfpage.hidden {
+	display: none;
+}
